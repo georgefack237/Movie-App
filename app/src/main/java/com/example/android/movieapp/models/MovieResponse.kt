@@ -1,13 +1,8 @@
 package com.example.android.movieapp.models
 
-import android.os.Parcelable
-import com.google.gson.annotations.SerializedName
-import kotlinx.android.parcel.Parcelize
-
-@Parcelize
-data class MovieResponse (
-    @SerializedName("result")
-    val movies: List<Movie>
-    ):Parcelable{
-        constructor(): this(mutableListOf())
-    }
+data class MovieResponse(
+    val page: Int,
+    val results: List<Movie>,
+    val total_pages: Int,
+    val total_results: Int
+)

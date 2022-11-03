@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 call: Call<MovieResponse>,
                 response: Response<MovieResponse>
             ) {
-                return callback(response.body()!!.movies)
+                return callback(response.body()!!.results)
             }
         })
     }

@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.android.movieapp.models.Movie
 
 class MovieAdapter (
-    private val movies : List<Movie>
+    private val movies :List<Movie>
         ) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
@@ -33,10 +33,10 @@ class MovieAdapter (
 
         fun bindMovie(movie: Movie) {
             m_t.text = movie.title
-            m_r_d.text = movie.release
+            m_r_d.text = movie.release_date
 //            itemView.movie_title.text = movie.title
 //            itemView.movie_release_date.text = movie.release
-            Glide.with(itemView).load(IMAGE_BASE + movie.poster).into(itemView.findViewById(R.id.movie_poster))
+            Glide.with(itemView).load(IMAGE_BASE + movie.poster_path).into(itemView.findViewById(R.id.movie_poster))
         }
 
     }
