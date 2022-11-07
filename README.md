@@ -15,7 +15,7 @@ A “Brandat” is an android app that offers a lot of products and fashion item
 - **Kotlin**
 - **Coroutines**
 - **Hilt**
-- **LiveData**
+-  LiveData
 - **ViewModel**
 - **Navigation component**
 - **Material Components**
