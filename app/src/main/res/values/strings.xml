@@ -4,4 +4,7 @@
     <string name="movie_catalog">Movie Catalog</string>
     <string name="release_date">Release Date</string>
     <string name="movie_title">Movie Title</string>
+    <string name="movie_app">Movie App</string>
+    <string name="splash_screen">Splash screen</string>
+    <string name="sample_text_here">Sample text here ...</string>
 </resources>
